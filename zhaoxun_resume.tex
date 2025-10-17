@@ -7,23 +7,17 @@
 
 \documentclass[letterpaper,11pt]{article}
 
-\usepackage{latexsym}
 \usepackage[empty]{fullpage}
 \usepackage{titlesec}
-\usepackage{marvosym}
 \usepackage[usenames,dvipsnames]{color}
-\usepackage{verbatim}
 \usepackage{enumitem}
 \usepackage[hidelinks]{hyperref}
 \usepackage{fancyhdr}
 \usepackage[english]{babel}
 \usepackage{tabularx}
 \usepackage{fontawesome5}
-\usepackage{multicol}
 
-\setlength{\multicolsep}{-3.0pt}
-\setlength{\columnsep}{-1pt}
-\input{glyphtounicode}
+% \input{glyphtounicode}  % Only for pdfTeX, not needed for XeLaTeX
 
 
 %----------FONT OPTIONS----------
@@ -63,7 +57,7 @@
 }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
 
 % Ensure that generate pdf is machine readable/ATS parsable
-\pdfgentounicode=1
+% \pdfgentounicode=1  % Only for pdfTeX, not needed for XeLaTeX (Unicode is native)
 
 %-------------------------
 % Custom commands
@@ -90,7 +84,7 @@
 \newcommand{\publication}[3]{
   \vspace{-2pt}\item
     \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
-    \textbf{\small{#1}} \\ 
+    \textbf{\small{#1}} \\
     {#3} \\
     \textit{#2} \\
     \end{tabular*}\vspace{-7pt}
@@ -188,7 +182,7 @@
     {\Huge \scshape \textbf{Zhaoxun Liu}} \\ \vspace{5pt}
     {\Large \textbf{Lorenz}} {\textbf{O}ften \textbf{R}epresents the \textbf{E}nglish \textbf{N}ame for \textbf{Z}haoxun} \\ \vspace{5pt}
     \href{https://web.cs.toronto.edu/}{Department of Computer Science, University of Toronto, St. George Campus} \\ \vspace{2pt}
-    \small \href{https://www.linkedin.com/in/zhaoxun-lorenz-liu/}{\raisebox{-0.1\height}\faLinkedin\ Zhaoxun (Lorenz) Liu} ~ \href{mailto:lorenz@cs.toronto.edu}{\raisebox{-0.2\height}\faEnvelope\  {lorenz@cs.toronto.edu}} ~ 
+    \small \href{https://www.linkedin.com/in/zhaoxun-lorenz-liu/}{\raisebox{-0.1\height}\faLinkedin\ Zhaoxun (Lorenz) Liu} ~ \href{mailto:lorenz@cs.toronto.edu}{\raisebox{-0.2\height}\faEnvelope\  {lorenz@cs.toronto.edu}} ~
     \href{https://lorenz.fun/}{\raisebox{-0.2\height}\faHome\ {lorenz.fun}}  ~
     \href{https://github.com/lorenz-liu}{\raisebox{-0.2\height}\faGithub\ {lorenz-liu}}
     \vspace{-8pt}
@@ -264,7 +258,7 @@
  % \end{itemize}
 
 \vspace{-10pt}
-\section{AREA}
+\section{AREAS}
 \textbf{\small{AI Agent}:} I develop agentic AI solutions to enhance clinical decision-making and improve patient outcomes, focusing on integrating AI systems seamlessly into healthcare workflows.
 
 \textbf{\small{Human-AI Interaction}:} I apply my expertise in HCI and AI to build interactive data systems, study their impact on users, and search for methods to control AI behaviors and align them with human values and goals.
@@ -277,7 +271,7 @@
         \publication{\href{https://lorenz.fun/files/hands-free-is-fine.pdf}{Hands-Free Is Fine: Gaze-Dominant Object Manipulation in Virtual Reality}}{Journal of Beihang University, 2023 (Undergraduate Thesis)}{Zhaoxun Liu*, Xiaolong Liu, Lili Wang}
         \publication{\href{https://doi.org/10.1109/JIOT.2023.3257992}{Temporal Transformer Networks with Self-Supervision for Action Recognition}}{IEEE Internet of Things Journal (IoT), 2023}{Yongkang Zhang, Jun Li, Na Jiang, Guoming Wu, Han Zhang, Zhiping Shi, Zhaoxun Liu*, Zizhang Wu}
     \resumeSubHeadingListEnd
-    
+
 %-----------EXPERIENCE-----------
 \vspace{-5pt}
 \section{INDUSTRIAL}
@@ -288,7 +282,7 @@
       \resumeItemListStart
         \resumeItem{I lead the Machine Learning Research Team at the SARA Lab, UHN. We conduct research in foundational models, computer vision, graphics, and reinforcement learning. I also engage in other healthcare application development using game engines web dev frameworks.}
         \resumeItem{\textit{MasTER} remains my main project. We scale it up to be an ecosystem for general disaster preparedness and training. Applied methods include deep reinforcement learning to support critical decision-making, large language model fine-tuning with RLHF to tailor to emergency medical knowledge, and multi-agent systems for cross-expertise medical team collaboration.}
-        
+
       \resumeItemListEnd
     \resumeSubheading
       {\href{https://temertysimcentre.com/surgical-artificial-intelligence-research-academy-sara/}{University Health Network (UHN)}}{\textbf{May. 2024 -- Dec. 2024}}
@@ -316,14 +310,14 @@
             \resumeItem{Offered an interactive interface allowing users to modify these visualizations for tailored insights and to pose detailed, context-specific queries for deeper understanding.}
             \resumeItem{Featured a non-linear abstraction framework to adeptly handle and streamline the complexity of information presented.}
           \resumeItemListEnd
-    
+
       \research{\href{https://csslab.cs.toronto.edu/}{Computational Social Science Lab}}{Graduate Student}{Sep. 2023 -- Dec. 2023}{University of Toronto}{\href{https://www.cs.toronto.edu/~ashton/}{Prof. Ashton Anderson}}
           \resumeItemListStart
             \resumeItem{Presented a pretrained language model-based framework to detect and reason about entities targeted by hateful memes.}
             \resumeItem{Provided insight into why certain groups are more susceptible to becoming targets of hateful memes. }
             \resumeItem{Proposed a specific preventive measure to curb the spread of hateful memes. }
           \resumeItemListEnd
-    
+
       \researchWithCollab
         {\href{http://vrlab.buaa.edu.cn/}{State Key Laboratory of Virtual Reality Technology and Systems}}
         {Researcher (Undergraduate Thesis)}
@@ -335,7 +329,7 @@
             \resumeItem{We proposed a hands-free object manipulation method based on gaze-dominant interaction, which significantly outperforms the current state-of-the-art gaze-based hands-free object manipulation method. }
             \resumeItem{We designed a novel user study, facilitating a quantitative evaluation of the efficiency of the proposed method. }
           \resumeItemListEnd
-    
+
       \researchWithCollab
         {\href{https://www.cs.dartmouth.edu/~hci/}{XDiscovery Lab (Dartmouth HCI Lab)}}
         {Intern Researcher}
@@ -349,7 +343,7 @@
             \resumeItem{Retrained the model based on the prompt-based approach to give three different semantic candidate sentences. }
             \resumeItem{Developed a web application to enable more people to participate in our user study. }
           \resumeItemListEnd
-          
+
       \label{sec:crosskeys}
       \research{\href{http://vrlab.buaa.edu.cn/}{State Key Laboratory of Virtual Reality Technology and Systems}}{Researcher}{Sep. 2021 -- Feb. 2022}{Beihang University}{\href{http://liliwang.net/}{Prof. Lili Wang}}
           \resumeItemListStart
@@ -403,8 +397,8 @@
 %     \resumeSubHeadingListEnd
 
 % \vspace{-8pt}
-% \section{AWARDS \& CERTIFICATES} 
-% \addtolength{\tabcolsep}{10pt}    
+% \section{AWARDS \& CERTIFICATES}
+% \addtolength{\tabcolsep}{10pt}
 % \small\begin{tabular}{rll}
 % 2024         & Scholarship                                & The Mitacs Accelerate Fellowship \\
 % 2023         & Award                                & ``Outstanding Undergraduate Thesis" of Beihang University \\
@@ -412,7 +406,7 @@
 % 2020         & The First Prize  & The 9th National University Students Arts Performance Competition \\
 % 2019	     & Silver Medal  & BUAA Basketball Association\\
 \end{tabular}
-\addtolength{\tabcolsep}{-10pt}    
+\addtolength{\tabcolsep}{-10pt}
 
 % \section{SELECTED COURSES}
 %   % \vspace{0.6\baselineskip}

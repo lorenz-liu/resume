@@ -1,0 +1,118 @@
+# LaTeX auxiliary files
+*.aux
+*.log
+*.out
+*.toc
+*.lot
+*.lof
+*.bbl
+*.blg
+*.synctex.gz
+*.synctex(busy)
+*.fdb_latexmk
+*.fls
+*.xdv
+*.nav
+*.snm
+*.vrb
+
+# LaTeX intermediate files
+*.dvi
+*.ps
+
+# BibTeX files
+*.bst
+
+# makeindex
+*.idx
+*.ilg
+*.ind
+
+# hyperref
+*.out
+
+# minitoc
+*.maf
+*.mtc
+*.mtc[0-9]*
+
+# nomenclature
+*.nlo
+
+# glossaries
+*.acn
+*.acr
+*.glg
+*.glo
+*.gls
+*.glsdefs
+
+# latexmk
+*.fdb_latexmk
+*.synctex
+*.synctex.gz
+
+# algorithmic
+*.alg
+*.loa
+
+# achemso
+acs-*.bib
+
+# amsthm
+*.thm
+
+# beamer
+*.nav
+*.snm
+*.vrb
+*-blx.bib
+*-concordance.tex
+
+# changes
+*.soc
+
+# cprotect
+*.cpt
+
+# todonotes
+*.tdo
+
+# xindy
+*.xdy
+
+# xwatermark package
+*.xwm
+
+# REVTeX puts footnotes in the bibliography by default, unless the nofootinbib
+# option is specified. Footnotes are the stored in a file with suffix Notes.bib.
+*Notes.bib
+
+# Backup files
+*~
+*.backup
+*.bak
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Thumbnails
+._*
+
+# Files that might appear in the root of a volume
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# Editor files
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
